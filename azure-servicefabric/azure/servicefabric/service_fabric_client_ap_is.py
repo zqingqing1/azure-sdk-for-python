@@ -62,7 +62,7 @@ class ServiceFabricClientAPIs(SDKClient):
         super(ServiceFabricClientAPIs, self).__init__(self.config.credentials, self.config)
 
         client_models = {k: v for k, v in models.__dict__.items() if isinstance(v, type)}
-        self.api_version = '6.3.0.9'
+        self.api_version = '6.4.0.9'
         self._serialize = Serializer(client_models)
         self._deserialize = Deserializer(client_models)
 
@@ -1710,7 +1710,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3"
+        api_version = "6.4"
 
         # Construct URL
         url = self.get_node_info_list.metadata['url']
@@ -15638,7 +15638,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.create_application_resource.metadata['url']
@@ -15694,7 +15694,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.get_application_resource.metadata['url']
@@ -15751,7 +15751,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.delete_application_resource.metadata['url']
@@ -15804,7 +15804,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`HttpOperationError<msrest.exceptions.HttpOperationError>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.get_services.metadata['url']
@@ -15865,7 +15865,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`HttpOperationError<msrest.exceptions.HttpOperationError>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.get_service.metadata['url']
@@ -15930,7 +15930,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`HttpOperationError<msrest.exceptions.HttpOperationError>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.get_replicas.metadata['url']
@@ -15996,7 +15996,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`HttpOperationError<msrest.exceptions.HttpOperationError>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.get_replica.metadata['url']
@@ -16060,7 +16060,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.create_volume_resource.metadata['url']
@@ -16115,7 +16115,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.get_volume_resource.metadata['url']
@@ -16171,7 +16171,7 @@ class ServiceFabricClientAPIs(SDKClient):
         :raises:
          :class:`FabricErrorException<azure.servicefabric.models.FabricErrorException>`
         """
-        api_version = "6.3-preview"
+        api_version = "6.4-preview"
 
         # Construct URL
         url = self.delete_volume_resource.metadata['url']
