@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class ClusterPatchParameters(Model):
+    """The PatchCluster request parameters.
+
+    :param tags: The resource tags.
+    :type tags: dict[str, str]
+    """
+
+    _attribute_map = {
+        'tags': {'key': 'tags', 'type': '{str}'},
+    }
+
+    def __init__(self, **kwargs):
+        super(ClusterPatchParameters, self).__init__(**kwargs)
+        self.tags = kwargs.get('tags', None)

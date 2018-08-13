@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class VmSizesCapability(Model):
+    """The virtual machine sizes capability.
+
+    :param available: The list of virtual machine size capabilities.
+    :type available: list[str]
+    """
+
+    _attribute_map = {
+        'available': {'key': 'available', 'type': '[str]'},
+    }
+
+    def __init__(self, **kwargs):
+        super(VmSizesCapability, self).__init__(**kwargs)
+        self.available = kwargs.get('available', None)

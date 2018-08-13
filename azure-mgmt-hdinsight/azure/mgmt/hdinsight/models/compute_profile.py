@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class ComputeProfile(Model):
+    """Describes the compute profile.
+
+    :param roles: The list of roles in the cluster.
+    :type roles: list[~azure.mgmt.hdinsight.models.Role]
+    """
+
+    _attribute_map = {
+        'roles': {'key': 'roles', 'type': '[Role]'},
+    }
+
+    def __init__(self, **kwargs):
+        super(ComputeProfile, self).__init__(**kwargs)
+        self.roles = kwargs.get('roles', None)

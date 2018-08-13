@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class HardwareProfile(Model):
+    """The hardware profile.
+
+    :param vm_size: The size of the VM
+    :type vm_size: str
+    """
+
+    _attribute_map = {
+        'vm_size': {'key': 'vmSize', 'type': 'str'},
+    }
+
+    def __init__(self, **kwargs):
+        super(HardwareProfile, self).__init__(**kwargs)
+        self.vm_size = kwargs.get('vm_size', None)

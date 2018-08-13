@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class SshPublicKey(Model):
+    """The SSH public key for the cluster nodes.
+
+    :param certificate_data: The certificate for SSH.
+    :type certificate_data: str
+    """
+
+    _attribute_map = {
+        'certificate_data': {'key': 'certificateData', 'type': 'str'},
+    }
+
+    def __init__(self, **kwargs):
+        super(SshPublicKey, self).__init__(**kwargs)
+        self.certificate_data = kwargs.get('certificate_data', None)

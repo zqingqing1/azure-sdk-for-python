@@ -9,5 +9,10 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from .hd_insight_management_client import HDInsightManagementClient
+from .version import VERSION
+
+__all__ = ['HDInsightManagementClient']
+
+__version__ = VERSION
 

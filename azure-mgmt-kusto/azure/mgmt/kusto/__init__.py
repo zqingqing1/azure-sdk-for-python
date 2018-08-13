@@ -9,5 +9,10 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from .kusto_management_client import KustoManagementClient
+from .version import VERSION
+
+__all__ = ['KustoManagementClient']
+
+__version__ = VERSION
 

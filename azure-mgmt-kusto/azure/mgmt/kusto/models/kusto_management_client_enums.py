@@ -9,5 +9,13 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from enum import Enum
 
+
+class ProvisioningState(str, Enum):
+
+    running = "Running"
+    creating = "Creating"
+    deleting = "Deleting"
+    succeeded = "Succeeded"
+    failed = "Failed"

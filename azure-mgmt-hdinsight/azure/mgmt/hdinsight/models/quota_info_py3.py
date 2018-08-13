@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class QuotaInfo(Model):
+    """The quota properties for the cluster.
+
+    :param cores_used: The cores used by the cluster.
+    :type cores_used: int
+    """
+
+    _attribute_map = {
+        'cores_used': {'key': 'coresUsed', 'type': 'int'},
+    }
+
+    def __init__(self, *, cores_used: int=None, **kwargs) -> None:
+        super(QuotaInfo, self).__init__(**kwargs)
+        self.cores_used = cores_used

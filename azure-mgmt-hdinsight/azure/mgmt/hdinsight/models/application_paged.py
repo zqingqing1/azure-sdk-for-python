@@ -9,5 +9,19 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.paging import Paged
 
+
+class ApplicationPaged(Paged):
+    """
+    A paging container for iterating over a list of :class:`Application <azure.mgmt.hdinsight.models.Application>` object
+    """
+
+    _attribute_map = {
+        'next_link': {'key': 'nextLink', 'type': 'str'},
+        'current_page': {'key': 'value', 'type': '[Application]'}
+    }
+
+    def __init__(self, *args, **kwargs):
+
+        super(ApplicationPaged, self).__init__(*args, **kwargs)

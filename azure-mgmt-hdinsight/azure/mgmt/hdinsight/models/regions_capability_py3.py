@@ -9,5 +9,20 @@
 # regenerated.
 # --------------------------------------------------------------------------
 
-VERSION = "4.2.2"
+from msrest.serialization import Model
 
+
+class RegionsCapability(Model):
+    """The regions capability.
+
+    :param available: The list of region capabilities.
+    :type available: list[str]
+    """
+
+    _attribute_map = {
+        'available': {'key': 'available', 'type': '[str]'},
+    }
+
+    def __init__(self, *, available=None, **kwargs) -> None:
+        super(RegionsCapability, self).__init__(**kwargs)
+        self.available = available
